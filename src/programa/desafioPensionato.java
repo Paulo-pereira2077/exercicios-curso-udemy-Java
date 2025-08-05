@@ -14,17 +14,15 @@ public class desafioPensionato {
         String email;
 
         // criando registro
-
-
         System.out.println("Choose a room from 1 to 10");
         System.out.print("How many will be rented? ");
         num = entrada.nextInt();
-        System.out.println();
 
         // criando o vetor
         Pessoas[] quarto = new Pessoas[10];
 
         for (int i = 0; i < num; i++){
+            System.out.println();// pula uma linha
             System.out.printf("Rent #%d\n", i + 1);
             entrada.nextLine();
             System.out.print("Name: ");
@@ -38,6 +36,8 @@ public class desafioPensionato {
         }
 
         // exibindo os quartos que foram registrados
+        System.out.println(); // pula uma linha
+        System.out.println("Busy rooms:");
         for (int i = 0; i < 10; i++){
             if (quarto[i] != null){
                 System.out.println(quarto[i]);
