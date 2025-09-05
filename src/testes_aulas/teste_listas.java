@@ -31,5 +31,8 @@ public class teste_listas {
             System.out.println(x);
         }
 
+        System.out.println("=================================");
+        System.out.println("Index of Bob: " + list.indexOf("Bob")); // usado para encontrar a posição de um elemento
+
     }
 }
