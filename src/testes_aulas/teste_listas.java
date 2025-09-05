@@ -13,11 +13,23 @@ public class teste_listas {
         list.add("Alex");
         list.add("Bob");
         list.add("Anna");
-        list.add(2, "Marco");
+        list.add(2, "Marco"); // adiciona um elemento
 
         System.out.println(list.size());
+
         for (String x: list){
             System.out.println(x);
         }
+
+        System.out.println("=================================");
+
+        list.remove("Anna");
+        list.remove(1);// remove um elemento
+        list.removeIf(x -> x.charAt(0) == 'M'); // um conceito de uma função lambda
+
+        for (String x: list){
+            System.out.println(x);
+        }
+
     }
 }
