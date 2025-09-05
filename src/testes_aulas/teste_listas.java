@@ -13,6 +13,7 @@ public class teste_listas {
         list.add("Alex");
         list.add("Bob");
         list.add("Anna");
+        list.add(2, "Marco");
 
         for (String x: list){
             System.out.println(x);
